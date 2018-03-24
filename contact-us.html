@@ -1,173 +1,152 @@
-<html>
+Try Formspree! MENU
 
-<head>
-  <style>
-    @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+FORMSPREE
+Functional HTML forms
+Just send your form to our URL and we'll forward it to your email. No PHP, Javascript or sign up required — perfect for static sites!
+Example:
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      -webkit-font-smoothing: antialiased;
-      -moz-font-smoothing: antialiased;
-      -o-font-smoothing: antialiased;
-      font-smoothing: antialiased;
-      text-rendering: optimizeLegibility;
-    }
+<form action="https://formspree.io/your@email.com"
+      method="POST">
+    <input type="text" name="name">
+    <input type="email" name="_replyto">
+    <input type="submit" value="Send">
+</form>
 
-    body {
-      font-family: "Open Sans", Helvetica, Arial, sans-serif;
-      font-weight: 300;
-      font-size: 12px;
-      line-height: 30px;
-      color: #777;
-      background: #0CF;
-    }
-
-    .container {
-      max-width: 400px;
-      width: 100%;
-      margin: 0 auto;
-      position: relative;
-    }
-
-    #contact input[type="text"],
-    #contact input[type="email"],
-    #contact input[type="tel"],
-    #contact input[type="url"],
-    #contact textarea,
-    #contact button[type="submit"] {
-      font: 400 12px/16px "Open Sans", Helvetica, Arial, sans-serif;
-    }
-
-    #contact {
-      background: #F9F9F9;
-      padding: 25px;
-      margin: 50px 0;
-    }
-
-    #contact h3 {
-      color: #F96;
-      display: block;
-      font-size: 30px;
-      font-weight: 400;
-    }
-
-    #contact h4 {
-      margin: 5px 0 15px;
-      display: block;
-      font-size: 13px;
-    }
-
-    fieldset {
-      border: medium none !important;
-      margin: 0 0 10px;
-      min-width: 100%;
-      padding: 0;
-      width: 100%;
-    }
-
-    #contact input[type="text"],
-    #contact input[type="email"],
-    #contact input[type="tel"],
-    #contact input[type="url"],
-    #contact textarea {
-      width: 100%;
-      border: 1px solid #CCC;
-      background: #FFF;
-      margin: 0 0 5px;
-      padding: 10px;
-    }
-
-    #contact input[type="text"]:hover,
-    #contact input[type="email"]:hover,
-    #contact input[type="tel"]:hover,
-    #contact input[type="url"]:hover,
-    #contact textarea:hover {
-      -webkit-transition: border-color 0.3s ease-in-out;
-      -moz-transition: border-color 0.3s ease-in-out;
-      transition: border-color 0.3s ease-in-out;
-      border: 1px solid #AAA;
-    }
-
-    #contact textarea {
-      height: 100px;
-      max-width: 100%;
-      resize: none;
-    }
-
-    #contact button[type="submit"] {
-      cursor: pointer;
-      width: 100%;
-      border: none;
-      background: #0CF;
-      color: #FFF;
-      margin: 0 0 5px;
-      padding: 10px;
-      font-size: 15px;
-    }
-
-    #contact button[type="submit"]:hover {
-      background: #09C;
-      -webkit-transition: background 0.3s ease-in-out;
-      -moz-transition: background 0.3s ease-in-out;
-      transition: background-color 0.3s ease-in-out;
-    }
-
-    #contact button[type="submit"]:active {
-      box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
-    }
-
-    #contact input:focus,
-    #contact textarea:focus {
-      outline: 0;
-      border: 1px solid #999;
-    }
-
-    ::-webkit-input-placeholder {
-      color: #888;
-    }
-
-    :-moz-placeholder {
-      color: #888;
-    }
-
-    ::-moz-placeholder {
-      color: #888;
-    }
-
-    :-ms-input-placeholder {
-      color: #888;
-    }
-  </style>
-
-  <body>
-    <div class="container">
-      <form id="contact" action="https://formspree.io/singh.nikhil999@gmail.com" method="post">
-        <h3>Quick Contact</h3>
-        <h4>Contact us today, and get reply with in 24 hours!</h4>
-        <fieldset>
-          <input placeholder="Your name" type="text" tabindex="1" name="name" required autofocus>
-        </fieldset>
-        <fieldset>
-          <input placeholder="Your Email Address" type="email" tabindex="2" name="_replyto" required>
-        </fieldset>
-        <fieldset>
-          <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
-        </fieldset>
-        <fieldset>
-          <textarea placeholder="Type your Message Here...." name="message" tabindex="5" required></textarea>
-        </fieldset>
-        <fieldset>
-          <button name="submit" type="submit" id="contact-submit" value="Send" data-submit="...Sending">Submit</button>
-        </fieldset>
-      </form>
+Test it out now with your email!
+Setting it up is easy and free. Here's how:
+You don't even have to register.
+1. Setup the HTML form
+Change your form's action-attribute to this and replace your@email.com with your own email.
 
 
-    </div>
-  </body>
-</head>
+https://formspree.io/your@email.com
 
-</html>
+2. Add a name attribute to every field
+Ensure all <input>, <select> and <textarea> elements inside your form have a name attribute, otherwise you will not receive the data filled in these fields.
+
+3. Submit the form and confirm your email address
+Go to your website and submit the form once. This will send you an email asking to confirm your email address.
+
+Remember that if you display the same form in multiple URLs of your site you'll have to confirm it multiple times!
+
+4. All set, receive emails
+From now on, when someone submits that form, we'll forward you the data as email.
+
+Some questions you might have:
+Who are you people?
+We're a community of developers that work together to create products. You can contribute on GitHub. Formspree is a project that solves a problem many of us have faced: easily adding forms to otherwise static HTML pages.
+
+What about privacy?
+We only store contents of the last 100 form submissions and delete the rest. Emails are sent using SendGrid's API, so on that end their privacy policies apply.
+
+How much does it cost?
+Formspree is free for 1000 submissions per email each month. If you need more, there's a Gold Plan.
+
+Can I have X?
+We have various interesting features enabled for our Gold Accounts and we are adding more. Please reach out to team@formspree.io if you need something we don't have.
+
+Advanced features:
+Form inputs can have specially named name-attributes, which alter functionality. They are all prefixed with an underscore.
+_replyto or email
+This value is used for the email's Reply-To field. This way you can directly "Reply" to the email to respond to the person who originally submitted the form.
+
+
+<input type="text" name="_replyto" placeholder="Your email" />
+
+_next
+By default, after submitting a form the user is shown the Formspree "Thank You" page. You can provide an alternative URL for that page.
+
+
+<input type="hidden" name="_next" value="//site.io/thanks.html" />
+
+_subject
+This value is used for the email's subject, so that you can quickly reply to submissions without having to edit the subject line each time.
+
+
+<input type="hidden" name="_subject" value="New submission!" />
+
+_cc
+This value is used for the email's CC Field. This lets you send a copy of each submission to another email address.
+
+
+<input type="hidden" name="_cc" value="another@email.com" />
+
+If you want to CC multiple email addresses, then just make it a list of email addresses separate by commas.
+
+
+<input type="hidden" name="_cc" value="another@email.com,yetanother@email.com" />
+
+_format
+Adding this to your form will allow for you to receive plain text versions of emails for form submissions.
+
+
+<input type="hidden" name="_format" value="plain" />
+
+_language
+We've gone global! If you want to display the reCAPTCHA page in a language other than English you can. We currently support ar, bg, cs, da, de, en, es, fi, fr, hu, id, it, ja, lt, nl, no, pl, pt-BR, pt-PT. ru, sk, sv, th, tr, uk, zh-CN and zh-TW.
+
+We love adding new languages! We're no language experts, but if you want your language added, please let us know.
+
+
+<input type="hidden" name="_language" value="es" />
+
+_gotcha
+Add this "honeypot" field to avoid spam by fooling scrapers. If a value is provided, the submission will be silently ignored. The input should be hidden with CSS.
+
+All forms come with reCAPTCHA, which uses advanced machine learning techniques to distinguish between humans and bots, so for most forms this isn't necessary.
+
+
+<input type="text" name="_gotcha" style="display:none" />
+
+For Formspree power users, we present Formspree Gold
+Formspree Gold costs
+
+$ 9.99
+each month
+
+Each Gold account can have unlimited forms and unlimited verified emails, and all them get the features listed below.
+
+UPGRADE NOW
+Gold features:
+Extra limits and functionality for power users
+Invisible emails
+Get a random-like string to replace your naked email address in the action attribute of your form. Your email address will remain unknown to spam-bots and human visitors.
+
+Unlimited form submissions
+Getting more than 1000 submissions each month? No problem, upgrading will cover that.
+
+Access to submissions archive
+If you ever missed a submission email, for any reason, you can just login and read your last 1000 submissions, all listed and timestamped with full data. Also, the submissions can be exported to CSV or JSON!
+
+It even works for submissions made while you were not a Gold user (the last 100, in this case).
+
+AJAX Forms
+Formspree Gold users can use AJAX to submit forms. This even works cross-origin. First create a new form in your account dashboard. Then set the Accept header on your form to application/json. If you're using jQuery this can be done like so:
+
+$.ajax({
+    url: "https://formspree.io/FORM_ID", 
+    method: "POST",
+    data: {message: "hello!"},
+    dataType: "json"
+});
+
+Same form on multiple pages
+Showing the same form on many different pages? Generate a form verified site-wide and don't worry about having to track multiple confirmation emails.
+
+Auto-confirmed forms
+Pre-verify email addresses on your account and you'll be able to create forms targetting them without having to submit the form and click on confirmation links.
+
+Disable reCAPTCHA
+Don't want your users to complete a reCAPTCHA? Each form now comes with the option to disable the reCAPTCHA, so you can maintain complete control over your form. You can even keep reCAPTCHA on a few forms that might be suceptible to spam, while disabling it on others.
+
+If you have a problem, please look here first. To sign up for our newsletter, use the form on the right.
+
+For a quick demo of Formspree, click here.
+
+
+Your name
+ 
+Your email
+ GET OUR NEWSLETTER
+  Formspree is a tool managed on GitHub.
+Please check out our Terms of Use and Privacy Policy.
